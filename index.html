@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Spam SMS Detector</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 class="title">Spam SMS Detector</h1>
+            <p class="subtitle">Paste an SMS and click Check to classify it as Spam or Ham.</p>
+        </div>
+
+        <textarea id="smsInput" placeholder="Enter your SMS here..."></textarea>
+        <button id="checkBtn">Check</button>
+
+        <div id="result" aria-live="polite"></div>
+        <p class="hint">Make sure your backend is running at <code>http://127.0.0.1:8000</code></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
